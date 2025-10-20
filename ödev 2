@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Üçgen alanı hesaplayan fonksiyon
+double ucgen_alani(double taban, double yukseklik) {
+    return (taban * yukseklik) / 2;
+}
+
+int main() {
+    double taban, yukseklik;
+
+    cout << "Taban uzunluğunu girin: ";
+    cin >> taban;
+
+    cout << "Yüksekliği girin: ";
+    cin >> yukseklik;
+
+    double alan = ucgen_alani(taban, yukseklik);
+
+    cout << "Üçgenin alanı: " << alan << endl;
+
+    return 0;
+}
