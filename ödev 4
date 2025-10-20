@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Küçük olan sayıyı döndüren fonksiyon
+int kucugu_bul(int sayi1, int sayi2) {
+    if (sayi1 < sayi2)
+        return sayi1;
+    else
+        return sayi2;
+}
+
+int main() {
+    int a, b;
+
+    cout << "İki sayı girin: ";
+    cin >> a >> b;
+
+    int sonuc = kucugu_bul(a, b);
+
+    cout << "Küçük olan sayı: " << sonuc << endl;
+
+    return 0;
+}
